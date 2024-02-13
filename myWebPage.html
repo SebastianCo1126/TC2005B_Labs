@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastián Colín</title>
+</head>
+<body>
+    <header> 
+        <h1> <font face="Helvetica">
+            Laboratorio 1: HTML
+        </font> </h1>
+    </header>
+
+    <div class="two-col">
+        <section id="Pregunta 1">
+            <h3>¿Cuál es la diferencia entre Internet y la World Wide Web?</h3>
+
+            <ul>
+                <il>
+                    El internet es la infraestructura interconectada de diferentes computadoras y ordenadores. 
+                    Es una 'red de redes' (podría decirse que la red de redes). Sienta las bases para la Web.
+                </il>
+                <il>
+                    En los 60's ARPA (Advanced Research Project Agency) del departamento de defensa de USA 
+                    financió una investigación para desarrollar protocolos que permitieran que las computadoras
+                    se interconectaran y eventualmente se comunicaran. Así se creo la primera 'red' de investigación
+                    para este proyecto. Conectaba centros de investigación, universidades y demás. Pero al mismo
+                    tiempo se desarrollaban otras redes, con otros protocolos. Pero luego se quisieron conectar 
+                    estas redes, pero hubo problemas porque todas tenían diferentes protocolos. Así nació TCP/IP.
+                </il>
+                <il>
+                    Internet == Inter Network
+                </il>
+                <il>
+                    Una network (o red) es una serie de sistemas de computo interdonectados para comunicarse e 
+                    intercambiar datos. Son nodos conectados vía cables o vías inalámbricas. El internet entonces
+                    es la red de redes global. 
+                </il>
+                <il>
+                    Muchos servicios se han creado para utilizar del internet. Uno de ellos <b>la World Wide Web</b>. 
+                    El servicio más comunmente usado en el internet. Share, get and search data. Un sistema que 
+                    interconecta recursos en el internet.  Esto mediante hipervínculos, referenciados con URL's. 
+                    Se usan buscadores para acceder a los recursos de la web, y estos son presentados usualemente 
+                    en web pages conglomeradas en websites. 
+                </il>
+            </ul>
+        </section>
+        <section id="Pregunta 2">
+            <h3>
+                ¿Partes de un URL?
+            </h3>
+            <p>
+                Son diez, y aunque no contiene todas estas partes a la vez, mínimo siempre conteine tres: 
+            </p>
+            <ol>
+                <il>
+                    scheme (esquema): protocolo para accesar a una página web. 
+                    Usualmente https (Hyper Text Transfer Protocol Secure)
+                </il>
+                <il>
+                    subdomain (sub-dominio)
+                </il>
+                <il>
+                    top-level domain (dominio de nivel superior)
+                </il>
+                <il>
+                    second-level domain (dominio de segundo nivel)
+                </il>
+                <il>
+                    subdirectory (sub directorio)
+                </il>
+                <il>
+                    parameter (parámetro)
+                </il>
+                <il>
+                    port (puerto)
+                </il>
+                <il>
+                    path (camino)
+                </il>
+                <il>
+                    query (consulta)
+                </il>
+                <il>
+                    fragment (fragmento)
+                </il>
+            </ol>
+        </section>
+        <section id="Pregunta 3">
+            <h3>
+                ¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?
+            </h3>
+            <ul>
+                <il>
+                    GET: Recupera datos mediante una solicitud, más no los incluye. Representaciones de recurso.
+                </il>
+                <il>
+                    HEAD: Accesa solo a los <b>headers</b> sin el cuerpo en el request del URL. Se usa para obtener 
+                    tamaños de archivo por ejemplo.
+                </il>
+                <il>
+                    POST: Envía una serie de datos al servidor. Se diferencia con PUT ya que las llamadas 
+                    subsecuentes pueden tener efectos diferentes. <i>'Enviar a una entidad un recurso específico'.</i>
+                </il>
+                <il>
+                    PUT: (<i>idempotente</i>)Crea un elemento o cambia uno existente con las datos de la petición generada.
+                </il>
+                <il>
+                    PATCH: Se utiliza modificar parcialmente elementos. Un parche literalmente. Es parcial a difernecia de 
+                    PUT y no es <i>idempotente</i>, pero puede serlo. 
+                </il>
+                <il>
+                    DELETE: Elimina por completo los recursos especfíficados. 
+                </il>
+            </ul>
+        </section>
+        <section id="Pregunta 4">
+            <h3>
+                ¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu usuario 
+                y contraseña en algún sitio? ¿Por qué?
+            </h3>
+            <p>
+                POST, ya que es un método con mayor nivel de discreción y seguridad. Los datos no son mostrados en el 
+                caché ni en ningún tipo de historial. 
+            </p>
+        </section>
+        <section id="Pregunta 5">
+            <h3>
+                ¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través de un URL?
+            </h3>
+            <p>
+                GET. Este solicita información a un servidor. 
+            </p>
+        </section>
+        <section id="Pregunta 6">
+            <h3>
+                Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún error?
+            </h3>
+            <p>
+                Es el código OK. Se recibió, proceso y realizó una solicitud adecuadamente. No ocurrió ningun error. 
+            </p>
+        </section>
+        <section id="Pregunta 7">
+            <h3>
+                ¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder 
+                al sitio y se encontró con un error 404? ¿Por qué?
+            </h3>
+            <p>
+                El error 404 puede suceder por varias razones, y muchas veces el usuario puede arreglar el error y acceder
+                a la información que busca. Por ello no es necesariamente responsabilidad de un desarrollador atender esto. 
+            </p>
+        </section>
+        <section id="Pregunta 8">
+            <h3>
+                ¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al 
+                sitio y se encontró con un error 500? ¿Por qué?
+            </h3>
+            <p>
+                Hay un error en el servidor interno, por alguna razón no se puede accesar. Es responsabilidad del desarrollador
+                resovler esto. 
+            </p>
+        </section>
+        <section id="Pregunta 9">
+            <h3>
+                ¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos elementos de
+                HTML 4 que en HTML5 estén desaprobados?
+            </h3>
+            <p>
+                significa que son obsoletos y ya no se usan en las versionas más actuales. Sin embargo siguen siendo válidos,
+                más no se recomiendan en las prácticas más actuales. 
+            </p>
+            <table>
+                <tr>
+                    <th>
+                        <b>Tags Desaporbados</b>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        acronym 
+                    </td>
+                    <td>
+                        applet 
+                    </td>
+                    <td>
+                        basefront
+                    </td>
+                    <td>
+                        center 
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section id="Pregunta 10">
+            <h3>
+                ¿Qué componentes de estructura y estilo tiene una tabla?
+            </h3>
+            <p>
+                La table se construye con 'table'. 
+            </p>
+        </section>
+    </div>
+
+    <h2> <font face="Helvetica" >
+            Sobre mi
+        </font>
+    </h2>
+    <p> <font face="Helvetica">El arte, el cine y la música son de mis principales inspiraciones
+        en esta vida. A través de la <strong>Ingeniería de Software</strong> me gustaría 
+        explorar los límites de estas disciplinas. Pudiendo idealmente mezclar 
+        tecnología y arte. En instalaciones artísticas, realidades mixtas y aumentadas,
+        producción virtual etc.</font>
+    </p>
+
+    
+</body>
+</html>
