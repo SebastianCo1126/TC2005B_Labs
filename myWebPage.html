@@ -3,120 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Sebastián Colín</title>
 </head>
 <body>
     <header> 
-        <h1> <font face="Helvetica">
+        <h1> 
             Laboratorio 1: HTML
-        </font> </h1>
+        </h1>
     </header>
 
     <div class="two-col">
-        <section class="pregunta">
-            <h3>¿Cuál es la diferencia entre Internet y la World Wide Web?</h3>
+        <article>
+            <h3 class="pregunta">¿Cuál es la diferencia entre Internet y la World Wide Web?</h3>
 
             <ul>
-                <il>
+                <li>
                     El internet es la infraestructura interconectada de diferentes computadoras y ordenadores. 
                     Es una 'red de redes' (podría decirse que la red de redes). Sienta las bases para la Web.
-                </il>
-                <il>
+                </li>
+                <li>
                     En los 60's ARPA (Advanced Research Project Agency) del departamento de defensa de USA 
                     financió una investigación para desarrollar protocolos que permitieran que las computadoras
                     se interconectaran y eventualmente se comunicaran. Así se creo la primera 'red' de investigación
                     para este proyecto. Conectaba centros de investigación, universidades y demás. Pero al mismo
                     tiempo se desarrollaban otras redes, con otros protocolos. Pero luego se quisieron conectar 
                     estas redes, pero hubo problemas porque todas tenían diferentes protocolos. Así nació TCP/IP.
-                </il>
-                <il>
+                </li>
+                <li>
                     Internet == Inter Network
-                </il>
-                <il>
+                </li>
+                <li>
                     Una network (o red) es una serie de sistemas de computo interdonectados para comunicarse e 
                     intercambiar datos. Son nodos conectados vía cables o vías inalámbricas. El internet entonces
                     es la red de redes global. 
-                </il>
-                <il>
+                </li>
+                <li>
                     Muchos servicios se han creado para utilizar del internet. Uno de ellos <b>la World Wide Web</b>. 
                     El servicio más comunmente usado en el internet. Share, get and search data. Un sistema que 
                     interconecta recursos en el internet.  Esto mediante hipervínculos, referenciados con URL's. 
                     Se usan buscadores para acceder a los recursos de la web, y estos son presentados usualemente 
                     en web pages conglomeradas en websites. 
-                </il>
+                </li>
             </ul>
-        </section>
-        <section id="Pregunta 2">
-            <h3>
+        </article>
+        <article>
+            <h3 class="pregunta">
                 ¿Partes de un URL?
             </h3>
             <p>
                 Son diez, y aunque no contiene todas estas partes a la vez, mínimo siempre conteine tres: 
             </p>
             <ol>
-                <il>
+                <li>
                     scheme (esquema): protocolo para accesar a una página web. 
                     Usualmente https (Hyper Text Transfer Protocol Secure)
-                </il>
-                <il>
+                </li>
+                <li>
                     subdomain (sub-dominio)
-                </il>
-                <il>
+                </li>
+                <li>
                     top-level domain (dominio de nivel superior)
-                </il>
-                <il>
+                </li>
+                <li>
                     second-level domain (dominio de segundo nivel)
-                </il>
-                <il>
+                </li>
+                <li>
                     subdirectory (sub directorio)
-                </il>
-                <il>
+                </li>
+                <li>
                     parameter (parámetro)
-                </il>
-                <il>
+                </li>
+                <li>
                     port (puerto)
-                </il>
-                <il>
+                </li>
+                <li>
                     path (camino)
-                </il>
-                <il>
+                </li>
+                <li>
                     query (consulta)
-                </il>
-                <il>
+                </li>
+                <li>
                     fragment (fragmento)
-                </il>
+                </li>
             </ol>
-        </section>
-        <section id="Pregunta 3">
-            <h3>
+        </article>
+        <article>
+            <h3 class="pregunta">
                 ¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?
             </h3>
             <ul>
-                <il>
+                <li>
                     GET: Recupera datos mediante una solicitud, más no los incluye. Representaciones de recurso.
-                </il>
-                <il>
+                </li>
+                <li>
                     HEAD: Accesa solo a los <b>headers</b> sin el cuerpo en el request del URL. Se usa para obtener 
                     tamaños de archivo por ejemplo.
-                </il>
-                <il>
+                </li>
+                <li>
                     POST: Envía una serie de datos al servidor. Se diferencia con PUT ya que las llamadas 
                     subsecuentes pueden tener efectos diferentes. <i>'Enviar a una entidad un recurso específico'.</i>
-                </il>
-                <il>
+                </li>
+                <li>
                     PUT: (<i>idempotente</i>)Crea un elemento o cambia uno existente con las datos de la petición generada.
-                </il>
-                <il>
+                </li>
+                <li>
                     PATCH: Se utiliza modificar parcialmente elementos. Un parche literalmente. Es parcial a difernecia de 
                     PUT y no es <i>idempotente</i>, pero puede serlo. 
-                </il>
-                <il>
+                </li>
+                <li>
                     DELETE: Elimina por completo los recursos especfíficados. 
-                </il>
+                </li>
             </ul>
-        </section>
-        <section id="Pregunta 4">
-            <h3>
+        </article>
+        <article>
+            <h3 class="pregunta">
                 ¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu usuario 
                 y contraseña en algún sitio? ¿Por qué?
             </h3>
@@ -124,25 +125,25 @@
                 POST, ya que es un método con mayor nivel de discreción y seguridad. Los datos no son mostrados en el 
                 caché ni en ningún tipo de historial. 
             </p>
-        </section>
-        <section id="Pregunta 5">
-            <h3>
+        </article>
+        <article>
+            <h3 class="pregunta">
                 ¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través de un URL?
             </h3>
             <p>
                 GET. Este solicita información a un servidor. 
             </p>
-        </section>
-        <section id="Pregunta 6">
-            <h3>
+        </article>
+        <article>
+            <h3 class="pregunta">
                 Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún error?
             </h3>
             <p>
                 Es el código OK. Se recibió, proceso y realizó una solicitud adecuadamente. No ocurrió ningun error. 
             </p>
-        </section>
-        <section id="Pregunta 7">
-            <h3>
+        </article>
+        <article>
+            <h3 class="pregunta">
                 ¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder 
                 al sitio y se encontró con un error 404? ¿Por qué?
             </h3>
@@ -150,9 +151,9 @@
                 El error 404 puede suceder por varias razones, y muchas veces el usuario puede arreglar el error y acceder
                 a la información que busca. Por ello no es necesariamente responsabilidad de un desarrollador atender esto. 
             </p>
-        </section>
-        <section id="Pregunta 8">
-            <h3>
+        </article>
+        <article>
+            <h3 class="pregunta">
                 ¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al 
                 sitio y se encontró con un error 500? ¿Por qué?
             </h3>
@@ -160,9 +161,9 @@
                 Hay un error en el servidor interno, por alguna razón no se puede accesar. Es responsabilidad del desarrollador
                 resovler esto. 
             </p>
-        </section>
-        <section id="Pregunta 9">
-            <h3>
+        </article>
+        <article>
+            <h3 class="pregunta">
                 ¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos elementos de
                 HTML 4 que en HTML5 estén desaprobados?
             </h3>
@@ -180,39 +181,78 @@
                     <td>
                         acronym 
                     </td>
+                </tr>
+                <tr>
                     <td>
                         applet 
                     </td>
+                </tr>
+                <tr>
                     <td>
-                        basefront
+                        basefont 
                     </td>
+                </tr>
+                <tr>
                     <td>
-                        center 
+                        center
                     </td>
                 </tr>
             </table>
-        </section>
-        <section id="Pregunta 10">
-            <h3>
+        </article>
+        <article>
+            <h3 class="pregunta">
+                ¿Cuáles son las diferencias principales entre HTML 4 y HTML5?
+            </h3>
+            <p>
+                HTML 5 contiene nuevos elementos para mejorar la estructura y la semántica de este 
+                lenguaje. La declaración de un documento de HTML se hizo más sencilla y menos tediosa
+                que en HTML 4. También ahora se tiene una mayor cantidad de API's para HTML 5. La 
+                naturaleza de esta nueva variante también generó una mejor forma de estructurar estos 
+                documentos. 
+            </p>
+        </article>
+        <article>
+            <h3 class="pregunta">
                 ¿Qué componentes de estructura y estilo tiene una tabla?
             </h3>
             <p>
-                La table se construye con 'table'. 
+                La table se construye con 'table'. Cosnta de un head o encabezado (th o thead), 
+                un cuerpo (tbody) construido con 'td' y un footer (tfoot). Todas las celdas construidas
+                con 'td'.
             </p>
-        </section>
+        </article>
+        <article>
+            <h3 class="pregunta">
+                ¿Cuáles son los principales controles de una forma HTML5?
+            </h3>
+            <p>
+                
+            </p>
+        </article>
+        <article>
+            <h3 class="pregunta">
+                ¿Qué tanto soporte HTML5 tiene el navegador que utilizas?
+            </h3>
+            <p>
+               Yo utilizo Mozilla Firefox. Y el soporte de este en Mozilla es bastante amplio, y 
+               en las útlimas versiones se han realizado actualizaciones para tener un soporte 
+               adecuado. Sin embargo este llega a tener problemas con audio y video en páginas 
+               creadas con HTML 5. 
+            </p>
+        </article>
+        <article>
+            <h3 class="pregunta">
+              ¿Cuál es el ciclo de vida de los sistemas de información? y
+              ¿Cuál es el ciclo de desarrollo de sistemas de información?
+            </h3>
+            <p>
+               El ciclo de vida se refiere al proceso completo (en el paso del tiempo) desde la planeación, 
+               el análisis, diseño e implementación de un sistema. Pasando hasta su uso, funcionamiento 
+               y mentenimeitno. Mientras que el ciclo de desarrollo sólo se refiere al plazo de tiempo que 
+               toma la creación del sistema planteado. 
+            </p>
+        </article>
     </div>
-
-    <h2> <font face="Helvetica" >
-            Sobre mi
-        </font>
-    </h2>
-    <p> <font face="Helvetica">El arte, el cine y la música son de mis principales inspiraciones
-        en esta vida. A través de la <strong>Ingeniería de Software</strong> me gustaría 
-        explorar los límites de estas disciplinas. Pudiendo idealmente mezclar 
-        tecnología y arte. En instalaciones artísticas, realidades mixtas y aumentadas,
-        producción virtual etc.</font>
-    </p>
-
     
 </body>
 </html>
