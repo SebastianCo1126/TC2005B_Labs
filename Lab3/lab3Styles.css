@@ -1,0 +1,50 @@
+
+h2 {
+    font-family: 'Helvetica';
+    color: rgb(127, 36, 160);
+    margin-top: 20px;
+}
+
+.txt {
+    background-color: rgb(202, 206, 232);
+    margin: 10px;
+    padding: 10px;
+}
+
+*p {
+    float: left;
+}
+
+
+#title:hover {
+    font-size: 2.5em;
+}
+
+#sob:hover {
+    color: rgb(100, 100, 217);
+}
+
+#title {
+    font-family: 'Helvetica'; 
+    font-weight: bold; 
+    background-color: rgb(220, 220, 220);
+    padding: 30px; 
+    font-size: 2em;
+    margin: 0;
+    text-align: left;
+    -webkit-transition: font-size .5s ease;
+    -moz-transition: font-size .5s ease;
+    -o-transition: font-size .5s ease;
+    transition: font-size .5s ease;
+}
+
+#bu {
+    background-color: #797dcf; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
