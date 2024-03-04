@@ -1,0 +1,7 @@
+# These are some examples of commonly ignored file patterns. 
+# You should customize this list as a applicable to your poriject.
+# Learn more about .gitignrore: 
+# https://www.atlassian.com/git/tutorial/saving-changes/git-ignore
+
+# Node artifact files
+Lab12/
