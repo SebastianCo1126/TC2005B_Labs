@@ -1,0 +1,11 @@
+<%- include('includes/head.ejs') %>
+
+    <h2 class="title">¿Sigues aquí? No insistas.</h2>
+    <form action="/curioso" method="POST">
+        <label class="label" for="clase">Algo que decir?</label>
+        <input class="input text" id="clase" name="clase">   
+        <br><br>
+        <input class="button is-success" type="submit" value="Crear">
+    </form>
+
+<%- include('includes/footer.ejs') %>
