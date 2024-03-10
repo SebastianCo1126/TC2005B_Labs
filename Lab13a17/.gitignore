@@ -3,5 +3,5 @@
 # Learn more about .gitignrore: 
 # https://www.atlassian.com/git/tutorial/saving-changes/git-ignore
 
-# Node artifact files
-# Lab13/
+# Node artifact file
+node_modules/
