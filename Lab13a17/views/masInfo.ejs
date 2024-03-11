@@ -1,0 +1,35 @@
+<%- include('includes/head.ejs') %>
+
+<div class="columns">
+    <% for (let camara of camaras) { %>
+        <div class="column">
+            <div class="card">
+                <div class="card-image">
+                <figure class="image is-4by3">
+                    <img id="cam" src="<%= camara.imagen %>" alt="Imagen de <%= camara.clase %>">
+                </figure>
+                </div>
+                <div class="card-content">
+                <div class="media">
+                    <div class="media-left">
+                    <figure class="image is-48x48">
+                        <img src="<%= camara.imagen %>" alt="Imagen de <%= camara.clase %>">
+                    </figure>
+                    </div>
+                    <div class="media-content">
+                    <p class="title is-4"><%= camara.clase %></p>
+                    <p class="subtitle is-6">@<%= camara.clase %> Year: <span id="year_cam"><%= camara.year %></span></p>
+                    </div>
+                </div>
+                <div class="content">
+                    Formato: <span id="format_cam"><%= camara.format %></span> <br>
+                    <div class="contetn is-small">
+                        <p><%= camara.descripcion %></p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    <% } %>
+
+<%- include('includes/footer.ejs') %>

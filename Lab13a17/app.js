@@ -19,9 +19,9 @@ app.use((request, response, next) => {
   next(); 
 });
 
-const rutasClases = require('./routes/clases.routes');
+const rutasCamaras = require('./routes/camaras.routes');
 
-app.use('/', rutasClases);
+app.use('/', rutasCamaras);
 
 app.use((request, response, next) => {
   response.status(404);

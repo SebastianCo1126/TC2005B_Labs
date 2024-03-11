@@ -1,0 +1,19 @@
+<%- include('includes/head.ejs') %>
+
+<h2 class="title">Crear una nueva camara</h2>
+<form action="/crear" method="POST">
+    <label class="label" for="clase">Clase</label>
+    <input class="input text" id="clase" name="clase">
+    <label class="label" for="year">Year</label>
+    <input type="number" value="10" class="input text" id="year" name="year">
+    <label class="label" for="format">Format</label>
+    <input type="label" class="input text" id="format" name="format">
+    <label class="label" for="descripcion">Descripción:</label>
+    <input type="label" class="input text" id="descripcion" name="descripcion">
+    <label class="label" for="imagen">Imagen</label>
+    <input class="input text" id="imagen" name="imagen">
+    <br><br>
+    <input class="button is-success" type="submit" value="Crear">
+</form>
+
+<%- include('includes/footer.ejs') %>
