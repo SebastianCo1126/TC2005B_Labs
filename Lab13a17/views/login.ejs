@@ -1,7 +1,7 @@
 <%- include('includes/head.ejs', {username: username}) %>
 
-<h2 class="title">Bienvenido</h2>
-<form action="/users/login" method="POST">
+<h2 class="title"><% if (registro) { %> ¡Únete al clan! <% } else { %> ¡Bienvenido! <% } %></h2>
+<form action="/users/<% if (registro) { %> ¡Únete al clan! <% } else { %> ¡Bienvenido! <% } %>" method="POST">
     <label class="label" for="username">Nombre de usuario</label>
     <input class="input text" id="username" name="username">
     <label class="label" for="password">Contraseña</label>
