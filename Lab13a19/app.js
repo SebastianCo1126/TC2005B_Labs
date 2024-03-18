@@ -32,6 +32,11 @@ app.use((request, response, next) => {
 const cookieParser = require('cookie-parser');
 app.use(cookieParser());
 
+// CSRF Attack Protecion
+const csrf = require('csurf');
+const csrfProtection = csrf();
+app.use(csrfProtection); 
+
 // User routes
 const rutasUsuarios = require('./routes/users.routes');
 app.use('/users', rutasUsuarios);
