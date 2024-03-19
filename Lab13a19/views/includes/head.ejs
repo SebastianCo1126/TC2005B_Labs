@@ -21,11 +21,24 @@
             </div>
             <div id="navbarBasicExample" class="navbar-menu">
                 <div class="navbar-start">
+                    <% for(permiso of permisos) { %>
+                        <% if(permiso.permiso == 'ver_clan') { %>
+                            <a class="navbar-item" href="/camaras">
+                            Camaras
+                            </a>
+                        <% } %>
+                    <% } %>
+
+                    <% for(permiso of permisos) { %>
+                        <% if(permiso.permiso == 'crear_tropa') { %>
+                            <a class="navbar-item" href="/camaras/crear">
+                            Crear
+                            </a>
+                        <% } %>
+                    <% } %>
+
                     <a class="navbar-item" href="/">
                         Home
-                    </a>
-                    <a class="navbar-item" href="/crear">   
-                        Crear
                     </a>
                     <div class="navbar-item has-dropdown is-hoverable">
                         <a class="navbar-link">

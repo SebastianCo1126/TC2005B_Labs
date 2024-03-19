@@ -4,6 +4,8 @@ exports.get_crear = (request, response, next) => {
     response.render('crear',{
         username: request.session.username || '',
         csrfToken: request.csrfToken(),
+        permisos: request.session.permisos || [],
+        editar: false
     });
 };
 
@@ -47,6 +49,7 @@ exports.get_root = (request, response, next) => {
             camaras: rows,
             ultima_camara: request.cookies.ultima_camara || '',
             username: request.session.username || '',
+            permisos: request.session.permisos || [],
         });
         
     }).catch((error) => {
