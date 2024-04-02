@@ -1,7 +1,7 @@
 <%- include('includes/head.ejs', {username: username}) %>
 
 <h2 class="title">Crear una nueva camara</h2>
-<form action="/crear" method="POST">
+<form action="/crear" method="POST" enctype="multipart/form-data">
     <label class="label" for="clase">Clase</label>
     <input class="input text" id="clase" name="clase">
     <label class="label" for="year">Year</label>
@@ -11,7 +11,7 @@
     <label class="label" for="descripcion">Descripción:</label>
     <input type="label" class="input text" id="descripcion" name="descripcion">
     <label class="label" for="imagen">Imagen</label>
-    <input class="input text" id="imagen" name="imagen">
+    <input type="file" class="input text" id="imagen" name="imagen">
     <br><br>
     <input class="button is-success" type="submit" value="Crear">
 </form>
