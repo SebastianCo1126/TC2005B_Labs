@@ -22,7 +22,7 @@
             <div id="navbarBasicExample" class="navbar-menu">
                 <div class="navbar-start">
                     <% for(permiso of permisos) { %>
-                        <% if(permiso.permiso == 'ver_clan') { %>
+                        <% if(permiso.permiso == 'ver_camara') { %>
                             <a class="navbar-item" href="/camaras">
                             Camaras
                             </a>
@@ -30,7 +30,7 @@
                     <% } %>
 
                     <% for(permiso of permisos) { %>
-                        <% if(permiso.permiso == 'crear_tropa') { %>
+                        <% if(permiso.permiso == 'crear_camara') { %>
                             <a class="navbar-item" href="/camaras/crear">
                             Crear
                             </a>

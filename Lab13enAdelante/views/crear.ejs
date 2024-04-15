@@ -1,7 +1,23 @@
-<%- include('includes/head.ejs', {username: username}) %>
+<%- include('includes/head.ejs', {
+    username: username,
+    permisos: permisos,}) %>
 
-<h2 class="title">Crear una nueva camara</h2>
-<form action="/crear" method="POST" enctype="multipart/form-data">
+<% if(editar) { %
+    <h2 class="title">Editar</h2>  
+    <% } else { %>
+    <h2 class="title">Crear una nueva camara</h2>
+    
+<% } %>
+
+<% if(editar) { %>
+    <form action="/camaras/editar" method="POST" enctype="multipart/form-data"> 
+<% } else { %>
+    <form action="/camaras/crear" method="POST" enctype="multipart/form-data">
+<% } %>
+    <input type="hidden" name="_csrf" value="<%= csrfToken %>" >
+<% if(editar) { %>
+    <input type="hidden" id="id" name="id" value="<%= camara.id %>" > 
+<% } %>
     <label class="label" for="clase">Clase</label>
     <input class="input text" id="clase" name="clase">
     <label class="label" for="year">Year</label>
@@ -11,7 +27,7 @@
     <label class="label" for="descripcion">Descripción:</label>
     <input type="label" class="input text" id="descripcion" name="descripcion">
     <label class="label" for="imagen">Imagen</label>
-    <input type="file" class="input text" id="imagen" name="imagen">
+    <input type="file" class="input text" id="imagen" name="imagen" value="<% if(editar) { %><%= camara.imagen %><% } %>">
     <br><br>
     <input class="button is-success" type="submit" value="Crear">
 </form>

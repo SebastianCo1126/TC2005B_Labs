@@ -24,11 +24,11 @@ exports.get_masInfo = (request, response, next) => {
 
 exports.post_crear = (request, response, next) => {
     console.log(request.body);
-    console.log(request.file.path);
+    console.log(request.file);
 
     const mi_camara = new Camara(
         request.body.clase, request.body.year, request.body.format, 
-        request.body.descripcion ,request.body.file.filename
+        request.body.descripcion, request.file.filename
     );
 
     mi_camara.save().then(([rows, fieldData]) => {

@@ -1,4 +1,6 @@
-<%- include('includes/head.ejs', {username: username}) %>
+<%- include('includes/head.ejs', {
+    username: username,
+    permisos: permisos, }) %>
 
 <div class="columns">
     <% for (let camara of camaras) { %>
